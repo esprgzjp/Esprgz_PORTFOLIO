@@ -9,5 +9,11 @@ export default defineConfig({
             refresh: true,
         }),
         tailwindcss(),
+    
     ],
+    resolve:{
+            alias:{
+                "@": path.resolve(__dirname, "./src"),
+            }
+        }
 });
